@@ -1,5 +1,5 @@
-REPO = registry.gitlab.com/quaisr/commons
-NAME = injectee
+REPO = ghcr.io/masonlr
+NAME = prepare
 
 TAG = v0.1.0
 
@@ -13,6 +13,6 @@ push:
 	@docker push ${REPO}/${NAME}:latest || echo 'ERROR: Please log in to registry using "docker login registry.gitlab.com".'
 
 clean:
-	rm injectee_linux*
+	rm prepare*
 
 .PHONY: build push
