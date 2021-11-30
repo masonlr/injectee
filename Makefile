@@ -3,6 +3,7 @@ NAME = injectee
 
 TAG = v0.1.0
 
+
 build:
 	docker build -t ${REPO}/${NAME}:${TAG} -t ${REPO}/${NAME}:latest .
 
